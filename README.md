@@ -7,3 +7,7 @@ The purpose of this project is to use random search algorithm to fix runtime exc
 ### Research Questions
  - **RQ1:** What percentage of runtime exception errors in Expertiza can be fixed by random search algorithm?
  - **RQ2:** On average, how long will it take random search algorithm to fix one Expertiza bug?
+ 
+### Evaluation Plan
+ - **RQ1**
+  -Metric: number of  runtime exception errors fixed by automated evolutionary program repair out of the total number of selected errors.
