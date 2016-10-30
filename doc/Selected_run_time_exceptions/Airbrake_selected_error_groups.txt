@@ -1,0 +1,929 @@
+{
+	"groups": [
+		{
+			"id": "1775123337298054372",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `call' for nil:NilClass"
+				}
+			],
+			"context": {
+				"action": "",
+				"component": "",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1808119565395053265",
+			"lastNoticeAt": "2016-10-30T17:30:48.813Z",
+			"noticeCount": 1009,
+			"noticeTotalCount": 5134,
+			"commentCount": 0,
+			"createdAt": "2016-09-15T04:53:11.527044Z"
+		},
+		{
+			"id": "1806782678925052472",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `can_submit' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/sign_up_sheet_controller.rb",
+							"function": "are_needed_authorizations_present?",
+							"line": 388
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "list",
+				"component": "sign_up_sheet",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1808058208370262331",
+			"lastNoticeAt": "2016-10-30T15:28:54.486Z",
+			"noticeCount": 472,
+			"noticeTotalCount": 472,
+			"commentCount": 0,
+			"createdAt": "2016-10-28T21:14:35.275695Z"
+		},
+		{
+			"id": "1766139777878852159",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "private method `select' called for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/menu_items_controller.rb",
+							"function": "link",
+							"line": 151
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "link",
+				"component": "menu_items",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1807683650270262963",
+			"lastNoticeAt": "2016-10-30T03:04:43.681Z",
+			"noticeCount": 80,
+			"noticeTotalCount": 80,
+			"commentCount": 0,
+			"createdAt": "2016-09-02T19:24:28.117296Z"
+		},
+		{
+			"id": "1770032930415444770",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "RuntimeError",
+					"message": "This topic has too many reviews; please select another one.",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/models/review_assignment.rb",
+							"function": "contributor_to_review",
+							"line": 172
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "assign_reviewer_dynamically",
+				"component": "review_mapping",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1807583330144758624",
+			"lastNoticeAt": "2016-10-29T23:45:24.59Z",
+			"noticeCount": 54,
+			"noticeTotalCount": 54,
+			"commentCount": 0,
+			"createdAt": "2016-09-08T04:19:26.407351Z"
+		},
+		{
+			"id": "1517247902792549741",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `student?' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/tree_display_controller.rb",
+							"function": "list",
+							"line": 87
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "list",
+				"component": "tree_display",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1807516782623642055",
+			"lastNoticeAt": "2016-10-29T21:33:11.507Z",
+			"noticeCount": 493,
+			"noticeTotalCount": 554,
+			"commentCount": 0,
+			"createdAt": "2015-09-25T09:40:44.564572Z"
+		},
+		{
+			"id": "1805332790232222219",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `id' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/response_controller.rb",
+							"function": "set_dropdown_or_scale",
+							"line": 309
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "new",
+				"component": "response",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1807213968039656432",
+			"lastNoticeAt": "2016-10-29T11:31:33.196Z",
+			"noticeCount": 6,
+			"noticeTotalCount": 6,
+			"commentCount": 0,
+			"createdAt": "2016-10-26T21:13:56.185741Z"
+		},
+		{
+			"id": "1781551925379466692",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `split' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/models/vm_question_response.rb",
+							"function": "block (3 levels) in get_number_of_comments_greater_than_10_words",
+							"line": 161
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "view_team",
+				"component": "grades",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1805953212362803519",
+			"lastNoticeAt": "2016-10-27T17:46:39.407Z",
+			"noticeCount": 16,
+			"noticeTotalCount": 16,
+			"commentCount": 0,
+			"createdAt": "2016-09-24T01:45:38.343488Z"
+		},
+		{
+			"id": "1780737855340413304",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `keys' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/questionnaires_controller.rb",
+							"function": "update_quiz",
+							"line": 325
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "update_quiz",
+				"component": "questionnaires",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1804108396699812694",
+			"lastNoticeAt": "2016-10-25T04:41:20.243Z",
+			"noticeCount": 6,
+			"noticeTotalCount": 6,
+			"commentCount": 0,
+			"createdAt": "2016-09-22T22:48:14.575466Z"
+		},
+		{
+			"id": "1776303046291622084",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `page' for []:Array",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/users_controller.rb",
+							"function": "paginate_list",
+							"line": 237
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "list",
+				"component": "users",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1804055442562500353",
+			"lastNoticeAt": "2016-10-25T02:56:07.618Z",
+			"noticeCount": 7,
+			"noticeTotalCount": 7,
+			"commentCount": 0,
+			"createdAt": "2016-09-16T19:57:00.821708Z"
+		},
+		{
+			"id": "1804043391875943089",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "TypeError",
+					"message": "no implicit conversion of nil into String",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/teams_controller.rb",
+							"function": "const_get",
+							"line": 31
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "new",
+				"component": "teams",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1804043386700372205",
+			"lastNoticeAt": "2016-10-25T02:32:10.447Z",
+			"noticeCount": 1,
+			"noticeTotalCount": 1,
+			"commentCount": 0,
+			"createdAt": "2016-10-25T02:32:10.447099Z"
+		},
+		{
+			"id": "1776363025509911266",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "ActionView::Template::Error",
+					"message": "undefined method `name' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/student_review/list.html.erb",
+							"function": "_app_views_student_review_list_html_erb___4488073823698814278_70277139404860",
+							"line": 1
+						}
+					]
+				},
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `name' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/student_review/list.html.erb",
+							"function": "_app_views_student_review_list_html_erb___4488073823698814278_70277139404860",
+							"line": 1
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "list",
+				"component": "student_review",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1804038530829002082",
+			"lastNoticeAt": "2016-10-25T02:22:31.582Z",
+			"noticeCount": 5,
+			"noticeTotalCount": 5,
+			"commentCount": 0,
+			"createdAt": "2016-09-16T21:56:14.223661Z"
+		},
+		{
+			"id": "1785823639999349229",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "ActionView::Template::Error",
+					"message": "undefined method `id' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/grades/_team.html.erb",
+							"function": "_app_views_grades__team_html_erb__126953019670615152_70333252752720",
+							"line": 10
+						}
+					]
+				},
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `id' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/grades/_team.html.erb",
+							"function": "_app_views_grades__team_html_erb__126953019670615152_70333252752720",
+							"line": 10
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "view",
+				"component": "grades",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1804003048626773188",
+			"lastNoticeAt": "2016-10-25T01:12:01.774Z",
+			"noticeCount": 6,
+			"noticeTotalCount": 6,
+			"commentCount": 0,
+			"createdAt": "2016-09-29T23:12:41.361124Z"
+		},
+		{
+			"id": "1800317719559012696",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `each' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/models/due_date.rb",
+							"function": "get_next_due_date",
+							"line": 72
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "list",
+				"component": "student_task",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1800320295346998475",
+			"lastNoticeAt": "2016-10-19T23:15:03.372Z",
+			"noticeCount": 8,
+			"noticeTotalCount": 8,
+			"commentCount": 0,
+			"createdAt": "2016-10-19T23:09:43.193314Z"
+		},
+		{
+			"id": "1800240536513675372",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NameError",
+					"message": "uninitialized constant SignUpSheetController::TopicDependency",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/sign_up_sheet_controller.rb",
+							"function": "destroy",
+							"line": 77
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "destroy",
+				"component": "sign_up_sheet",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1800240433230955997",
+			"lastNoticeAt": "2016-10-19T20:36:23.066Z",
+			"noticeCount": 1,
+			"noticeTotalCount": 1,
+			"commentCount": 0,
+			"createdAt": "2016-10-19T20:36:23.066494Z"
+		},
+		{
+			"id": "1766248124300920137",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `is_waitlisted' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/models/sign_up_topic.rb",
+							"function": "reassign_topic",
+							"line": 84
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "delete_signup",
+				"component": "sign_up_sheet",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1799505759660445987",
+			"lastNoticeAt": "2016-10-18T20:16:43.151Z",
+			"noticeCount": 7,
+			"noticeTotalCount": 7,
+			"commentCount": 0,
+			"createdAt": "2016-09-02T22:59:42.602367Z"
+		},
+		{
+			"id": "1775854833092790802",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "AbstractController::DoubleRenderError",
+					"message": "Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like \"redirect_to(...) and return\".",
+					"backtrace": [
+						{
+							"file": "[GEM_ROOT]/gems/actionpack-4.2.6/lib/action_controller/metal/redirecting.rb",
+							"function": "redirect_to",
+							"line": 72
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "save_all_questions",
+				"component": "questionnaires",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1795698271316945521",
+			"lastNoticeAt": "2016-10-13T14:11:55.171Z",
+			"noticeCount": 5,
+			"noticeTotalCount": 5,
+			"commentCount": 0,
+			"createdAt": "2016-09-16T05:06:31.308219Z"
+		},
+		{
+			"id": "1774360945974838307",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `tempfile' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/import_file_controller.rb",
+							"function": "importFile",
+							"line": 32
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "import",
+				"component": "import_file",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1795155592210428802",
+			"lastNoticeAt": "2016-10-12T20:13:42.78Z",
+			"noticeCount": 5,
+			"noticeTotalCount": 5,
+			"commentCount": 0,
+			"createdAt": "2016-09-14T03:38:26.625141Z"
+		},
+		{
+			"id": "1781398948366778395",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `can_submit' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/sign_up_sheet_controller.rb",
+							"function": "are_needed_authorizations_present?",
+							"line": 354
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "list",
+				"component": "sign_up_sheet",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1787937769222421427",
+			"lastNoticeAt": "2016-10-02T21:13:11.23Z",
+			"noticeCount": 155,
+			"noticeTotalCount": 155,
+			"commentCount": 0,
+			"createdAt": "2016-09-23T20:40:48.667406Z"
+		},
+		{
+			"id": "1785175512044800326",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "ActionView::Template::Error",
+					"message": "String can't be coerced into Fixnum",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/grades/_participant.html.erb",
+							"function": "+",
+							"line": 98
+						}
+					]
+				},
+				{
+					"type": "TypeError",
+					"message": "String can't be coerced into Fixnum",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/grades/_participant.html.erb",
+							"function": "+",
+							"line": 98
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "view",
+				"component": "grades",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1785580181966317392",
+			"lastNoticeAt": "2016-09-29T15:09:04.928Z",
+			"noticeCount": 4,
+			"noticeTotalCount": 4,
+			"commentCount": 0,
+			"createdAt": "2016-09-29T01:45:04.229687Z"
+		},
+		{
+			"id": "1778730510620033769",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "ActionView::Template::Error",
+					"message": "undefined method `hyperlinks' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/submitted_content/_main.html.erb",
+							"function": "_app_views_submitted_content__main_html_erb__538579470731994987_70200233273940",
+							"line": 1
+						}
+					]
+				},
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `hyperlinks' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/submitted_content/_main.html.erb",
+							"function": "_app_views_submitted_content__main_html_erb__538579470731994987_70200233273940",
+							"line": 1
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "view_my_scores",
+				"component": "grades",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1785025883337038961",
+			"lastNoticeAt": "2016-09-28T20:47:47.382Z",
+			"noticeCount": 3,
+			"noticeTotalCount": 3,
+			"commentCount": 0,
+			"createdAt": "2016-09-20T04:20:00.140991Z"
+		},
+		{
+			"id": "1784274870078015831",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `user_id' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/grades_controller.rb",
+							"function": "redirect_when_disallowed",
+							"line": 234
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "view_my_scores",
+				"component": "grades",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1784274867241448363",
+			"lastNoticeAt": "2016-09-27T19:55:39.287Z",
+			"noticeCount": 1,
+			"noticeTotalCount": 1,
+			"commentCount": 0,
+			"createdAt": "2016-09-27T19:55:39.28762Z"
+		},
+		{
+			"id": "1781341924698360618",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "ActionView::Template::Error",
+					"message": "undefined method `name' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/student_quizzes/_responses.html.erb",
+							"function": "block in _app_views_student_quizzes__responses_html_erb___2894040659750197265_70084273229480",
+							"line": 13
+						}
+					]
+				},
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `name' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/views/student_quizzes/_responses.html.erb",
+							"function": "block in _app_views_student_quizzes__responses_html_erb___2894040659750197265_70084273229480",
+							"line": 13
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "index",
+				"component": "student_quizzes",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1783722975329168772",
+			"lastNoticeAt": "2016-09-27T01:39:08.644Z",
+			"noticeCount": 37,
+			"noticeTotalCount": 37,
+			"commentCount": 0,
+			"createdAt": "2016-09-23T18:48:36.355631Z"
+		},
+		{
+			"id": "1781383426363363128",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "TypeError",
+					"message": "no implicit conversion from nil to integer",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/review_mapping_controller.rb",
+							"function": "[]",
+							"line": 592
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "automatic_review_mapping",
+				"component": "review_mapping",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1781383424673810773",
+			"lastNoticeAt": "2016-09-23T20:10:52.472Z",
+			"noticeCount": 1,
+			"noticeTotalCount": 1,
+			"commentCount": 0,
+			"createdAt": "2016-09-23T20:10:52.472654Z"
+		},
+		{
+			"id": "1779346862720420625",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `dropdown' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/response_controller.rb",
+							"function": "set_dropdown_or_scale",
+							"line": 309
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "view",
+				"component": "response",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1806929856037984876",
+			"lastNoticeAt": "2016-10-29T02:07:04.406Z",
+			"noticeCount": 8,
+			"noticeTotalCount": 8,
+			"commentCount": 0,
+			"createdAt": "2016-09-21T00:44:44.141222Z"
+		},
+		{
+			"id": "1806836574473161441",
+			"projectId": 19072,
+			"resolved": false,
+			"sampled": false,
+			"muted": false,
+			"mutedBy": 0,
+			"mutedAt": null,
+			"errors": [
+				{
+					"type": "NoMethodError",
+					"message": "undefined method `dropdown' for nil:NilClass",
+					"backtrace": [
+						{
+							"file": "[PROJECT_ROOT]/app/controllers/response_controller.rb",
+							"function": "set_dropdown_or_scale",
+							"line": 309
+						}
+					]
+				}
+			],
+			"context": {
+				"action": "edit",
+				"component": "response",
+				"environment": "production"
+			},
+			"lastDeployId": "0",
+			"lastDeployAt": null,
+			"lastNoticeId": "1806895220037392253",
+			"lastNoticeAt": "2016-10-29T00:58:15.473Z",
+			"noticeCount": 4,
+			"noticeTotalCount": 4,
+			"commentCount": 0,
+			"createdAt": "2016-10-28T23:01:39.958536Z"
+		}		
+	],
+	"count": 25,
+	"page": 1
+}
