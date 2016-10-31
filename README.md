@@ -28,6 +28,7 @@ The purpose of this project is to use random search algorithm to fix runtime exc
 #### Unresolved bug selection
 Expertiza uses Airbrake to capture and track runtime exceptions. I used [Airbrake API](https://airbrake.io/docs/api/) to obtain the recent 100 runtime exception errors from Expertiza. Then I selected 25 exception errors out of 100 in order to do further automated bug fixing. The main reasons I filtered the rest 75 exception errors are:
  - Already been fixed;
+ - Cannot be reproduced;
  - Need to create a new view page to fix the error (missing template);
  - Missing whole methods;
  - Related to database records and migrations;
