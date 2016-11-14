@@ -6,7 +6,7 @@ The purpose of this project is to use random search algorithm to fix runtime exc
 
 ### Research Questions
  - **RQ1:** What percentage of runtime exception errors in Expertiza can be fixed by random search algorithm?
- - **RQ2:** On average, how long will it take random search algorithm to fix one Expertiza bug?
+ - **RQ2:** On average, how long will it take random search algorithm to fix one Expertiza runtime exception error?
  
 ### Evaluation Plan
  - **RQ1**
@@ -14,19 +14,19 @@ The purpose of this project is to use random search algorithm to fix runtime exc
   - Artifact: unresolved Expertiza runtime exception errors caught by Airbrake.
   
  - **RQ2**
-  - Metric: average time consumed by random search algorithm to fix one bug.
-  - Artifact: unresolved Expertiza  runtime exception errors caught by Airbrake.
+  - Metric: average time consumed by random search algorithm to fix one runtime exception error.
+  - Artifact: unresolved Expertiza runtime exception errors caught by Airbrake.
   
 ### Timeline
- - Unresolved bug selection (Oct. 7 to Oct. 13)
+ - Unresolved runtime exception erro selection (Oct. 7 to Oct. 13)
  - Random search algorithm implementation (Oct. 14 to Oct. 31)
- - Automated bug fixing (Nov. 1 to Nov. 17)
+ - Automated runtime exception erro fixing (Nov. 1 to Nov. 17)
  - Result analysis (Nov. 18 to Nov. 23)
  - Final paper writing (Nov. 24 to Nov. 31)
  
 ### Progress
-#### Unresolved bug selection
-Expertiza uses Airbrake to capture and track runtime exceptions. I used [Airbrake API](https://airbrake.io/docs/api/) to obtain more than 100 runtime exception errors from Expertiza occured within 1 month. Then I selected 17 exception errors in order to do further automated bug fixing. The main reasons I filtered the rest exception errors are:
+#### Runtime exception error selection
+Expertiza uses Airbrake to capture and track runtime exceptions. I used [Airbrake API](https://airbrake.io/docs/api/) to obtain more than 100 runtime exception errors from Expertiza occured within 1 month. Then I selected 17 exception errors in order to do further automated runtime exception error fixing. The main reasons I filtered the rest exception errors are:
  - Already been fixed;
  - Cannot be reproduced;
  - Need to create a new view page to fix the error (missing template);
@@ -36,7 +36,9 @@ Expertiza uses Airbrake to capture and track runtime exceptions. I used [Airbrak
  
 After checking all 17 exception errors, I found most of them can be reproduced easily. However, others are obscure. Fortunately, Expertiza logs the actions of all users and I can reproduce the rest of exception errors according to the log file. What is more, Airbrake records the backtrace information for each exception error. In this way, it will be easy for me to do fault localization.
 
-Below are details of each exception error, including airbrake group id, occurrences, error message and test cases I wrote:
+#### Test case creation and developer patch generation
+##### Details of selected runtime exception errors
+Below are details of each exception error, including airbrake group id, occurrences, error message and test cases I wrote (if you click each airbrake group id, it will redirect to the corresponding branch including developer patch and test case):
 
 | Airbrake Group Id   | Occurrences | Error Message                                                   | Test Cases                     |
 |---------------------|-------------|-----------------------------------------------------------------|--------------------------------|
@@ -57,6 +59,45 @@ Below are details of each exception error, including airbrake group id, occurren
 | [1807465099223895248](https://github.com/Automated-Program-Repair-in-Expertiza/expertiza/tree/airbrake-1807465099223895248) | 2           | Couldn't find Team ('id'=27022)                                 | Functional test                |
 | [1800240536513675372](https://github.com/Automated-Program-Repair-in-Expertiza/expertiza/tree/airbrake-1800240536513675372) | 1           | Uninitialized constant (SignUpSheetController::TopicDependency) | Feature test                   |
 | [1784274870078015831](https://github.com/Automated-Program-Repair-in-Expertiza/expertiza/tree/airbrake-1784274870078015831) | 1           | Undefined method for nil:NilClass ('user_id')                   | Functional test                |
+
+##### Example of developer patch and test case
+I choose the runtime exception error which has the most occurrences to describe the test case creation and developer patch generation.
+
+According to airbrake error message, the buggy code is at line 388 of `	app/controllers/sign_up_sheet_controller.rb` file. And the url to trigger this bug is `	
+https://expertiza.ncsu.edu/sign_up_sheet/list?id=811`. Here is the buggy functionality.
+```
+387:    def are_needed_authorizations_present?
+388:        @participant = Participant.where('user_id = ? and parent_id = ?', session[:user].id, params[:assignment_id]).first
+389:        authorization = Participant.get_authorization(@participant.can_submit, @participant.can_review, @participant.can_take_quiz)
+390:        if authorization == 'reader' or authorization == 'submitter' or authorization == 'reviewer'
+391:            return false
+392:        else
+393:            return true
+394:        end
+395:    end
+```
+In buggy code, it reads the value from `params[:assignment_id]`. However, the url offers `id` as parameter. Consequently, instance variable `@participant` will be nil. And then, when line 389 tried to read the `can_submit` attribute from `@participant`, the system will raise `nil:NilClass` error.
+
+So for developer patch, I added one new line (`params[:assignment_id] = params[:id] if params[:assignment_id].nil?`) above line 388. The new line means if `params[:assignment_id]` is nil, system will assign `params[:id]` to `params[:assignment_id]`. In this case, either `params[:id]` or `params[:assignment_id]` has the correct value will make the code work.
+
+For test case, I wrote a feature test using Rspec and Capybara. Test code is shown below.
+```
+it "Airbrake-1806782678925052472", js: true do
+    	login_as 'student2066'
+    	visit '/sign_up_sheet/list?assignment_id=1'
+    	expect(page).to have_content('Signup sheet for')
+    	expect(page).to have_content('Hello world!')
+    	expect(page).to have_content('TestReview')
+	
+    	visit '/sign_up_sheet/list?id=1'
+    	expect(page).to have_content('Signup sheet for')
+    	expect(page).to have_content('Hello world!')
+    	expect(page).to have_content('TestReview')
+	end
+```
+
+
+
 
 ### References
 [1] S. Huang, M. B. Cohen, and A. M. Memon. Repairing GUI
