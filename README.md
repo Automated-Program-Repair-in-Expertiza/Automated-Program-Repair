@@ -80,7 +80,7 @@ In buggy code, it reads the value from `params[:assignment_id]`. However, the ur
 
 So for developer patch, I added one new line (`params[:assignment_id] = params[:id] if params[:assignment_id].nil?`) above line 388. The new line means if `params[:assignment_id]` is nil, system will assign `params[:id]` to `params[:assignment_id]`. In this case, either `params[:id]` or `params[:assignment_id]` has the correct value will make the code work.
 
-For test case, I wrote a feature test using Rspec and Capybara. Test code is shown below.
+For test case, I wrote a feature test using Rspec and Capybara. Test code is shown below. Basically I tries to visit 2 different urls and make sure the system does not raise `nil:NilClass` error.
 ```
 it "Airbrake-1806782678925052472", js: true do
     	login_as 'student2066'
