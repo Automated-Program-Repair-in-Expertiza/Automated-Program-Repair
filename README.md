@@ -1,5 +1,5 @@
 # Automated-Program-Repair
-This repo contains all the code, artifacts, and submitted documents for the project.
+This repo contains artifacts, and submitted documents for the project.
 
 ### Slides
  - [Link](https://goo.gl/LMmwy1)
